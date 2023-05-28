@@ -26,6 +26,9 @@
     <input type="text" class="form-control" aria-label="busca" aria-describedby="buscaRapida" placeholder="Pesquise no Guiangle ou digite uma Url">
   </div>
   <div>
-    <button type="button" class="btn btn-primary">Pesquisar</button>
+    <button (click)="exibirWebSites()" type="button" class="btn btn-primary">Pesquisar</button>
+  </div>
+  <div *ngIf="deveMostrarWebSites" class="col-12 pt-3">
+    <app-webSites></app-webSites>
   </div>
 <router-outlet></router-outlet>

@@ -7,5 +7,10 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  title = 'guiangle';
+  public title = 'guiangle';
+  public deveMostrarWebSites: boolean = false;
+
+  public exibirWebSites(){
+    this.deveMostrarWebSites = true;
+  }
 }
