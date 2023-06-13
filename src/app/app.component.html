@@ -30,6 +30,6 @@
     <button (click)="exibirWebSites()" type="button" class="btn btn-primary">Pesquisar</button>
   </div>
   <div *ngIf="deveMostrarWebSites" class="col-12 pt-3">
-    <app-webSites></app-webSites>
+    <app-webSites [valorPesquisado]="valorPesquisado"></app-webSites>
   </div>
 <router-outlet></router-outlet>

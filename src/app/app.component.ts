@@ -12,6 +12,7 @@ export class AppComponent implements OnInit{
   public deveMostrarWebSites: boolean = false;
   public falhaAoBuscarWebSites : boolean = false;
   public valorPesquisado: string = "";
+  public valorPesquisadoComponenteWebSites: string = "";
 
   ngOnInit(): void { }
 
@@ -24,6 +25,7 @@ export class AppComponent implements OnInit{
 
     this.deveMostrarWebSites = true;
     this.falhaAoBuscarWebSites = false;
+    this.valorPesquisadoComponenteWebSites = this.valorPesquisado;
   }
 }
 

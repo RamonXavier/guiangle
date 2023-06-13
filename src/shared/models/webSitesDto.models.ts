@@ -9,4 +9,3 @@ export class WebSitesDto {
     Object.assign(this, init);
   }
 }
-
