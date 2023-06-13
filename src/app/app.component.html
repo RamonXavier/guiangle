@@ -23,7 +23,8 @@
         <i class="fas fa-search"></i>
       </span>
     </div>
-    <input type="text" class="form-control" aria-label="busca" aria-describedby="buscaRapida" placeholder="Pesquise no Guiangle ou digite uma Url">
+    <input [(ngModel)]="valorPesquisado" name="pesquisar" type="text" class="form-control" aria-label="busca" aria-describedby="buscaRapida" placeholder="Pesquise no Guiangle ou digite uma Url">
+    <small *ngIf="falhaAoBuscarWebSites" for="pesquisar" class="text-danger col-12">Este campo deve ser preenchido</small>
   </div>
   <div>
     <button (click)="exibirWebSites()" type="button" class="btn btn-primary">Pesquisar</button>
